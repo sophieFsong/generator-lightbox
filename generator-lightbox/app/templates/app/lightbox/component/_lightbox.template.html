@@ -1,0 +1,16 @@
+<div class="lightbox-bk">
+
+<div class="lightbox">
+    <h5 class="top-bar">
+        Progress
+        <span class="close" ng-click='$ctrl.close()'></span>
+    </h5>
+    <div class="lightbox-content">
+        <div class="progress">
+        <div class="progress-bar" ng-style="{'width': $ctrl.progress + '%'}">
+        </div>
+        </div>
+         <p>{{$ctrl.complete? 'The task is ' +$ctrl.progress + '% completed' : 'Progress '+ $ctrl.progress + ' %'}}</p>
+    </div>
+</div>
+</div>

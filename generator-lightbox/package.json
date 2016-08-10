@@ -1,0 +1,20 @@
+{
+  "name": "generator-lightbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "app",
+    "router"
+  ],
+  "author": "feng.song <feng.song@veda.com.au>",
+  "license": "ISC",
+  "keywords": ["yeoman-generator"],
+  "dependencies": {
+    "yeoman-generator": "^0.24.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
