@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="<%=ngApp%>" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>my cool app</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <!--bower:css-->
+    <!--endbower-->
+    <!--inject:css-->
+    <!--endinject -->
+</head>
+<body>
+
+<div ng-controller="LightboxCtrl">
+    <div ng-if="enable">
+        <lightbox progress="progress" complete="complete" on-close="close()"></lightbox>
+    </div>
+    <button ng-click="open()">open lightbox</button>
+    <button ng-click="reset()">Reset</button>
+</div>
+
+<script src="app/bower_components/angular/angular.js"></script>
+<script src="app/app.js"></script>
+<script src="app/lightbox/controller/lightbox.controller.js"></script>
+<script src="app/lightbox/service/lightbox.service.js"></script>
+<script src="app/lightbox/component/lightbox.component.js"></script>
+<!--bower:js-->
+<!--endbower-->
+<!--inject:js-->
+<!--endinject -->
+</body>
+</html>
